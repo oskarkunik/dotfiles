@@ -20,7 +20,7 @@ sudo apt purge cargo rustc libstd-rust-1.37 libstd-rust-dev &&
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh &&
 rustup install stable &&
 cargo install bandwhich &&
-# set elevated permissions for bandwhich
+printf "\n${bold}Set elevated permissions for bandwhich\n${normal}" &&
 sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep `which bandwhich` &&
 
 # .zshrc
