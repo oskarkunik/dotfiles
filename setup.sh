@@ -6,7 +6,7 @@ printf "${bold}Install updates\n" &&
 sudo apt update && sudo apt upgrade -y &&
 
 printf "${bold}Install software\n" &&
-sudo apt install python-pip3 zshrc chromium-browser firefox picard &&
+sudo apt install python3-pip zsh chromium-browser firefox picard &&
 
 
 # .zshrc
