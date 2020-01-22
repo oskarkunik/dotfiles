@@ -6,7 +6,7 @@ printf "\n${bold}Install updates\n${normal}" &&
 sudo apt update && sudo apt upgrade -y &&
 
 printf "\n${bold}Install software\n${normal}" &&
-sudo apt install python3-pip zsh chromium-browser firefox picard &&
+sudo apt install python3-pip zsh chromium-browser firefox picard inkscape gimp com.github.aimproxy.dotfonts com.github.donadigo.eddy com.github.lainsce.yishu com.github.babluboy.nutty com.github.lainsce.notejot com.github.ronnydo.colorpicker &&
 
 # Bandwhich network traffic monitor
 printf "\n${bold}Install bandwhich\n${normal}" &&
