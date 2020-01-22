@@ -83,4 +83,4 @@ export NVM_DIR="$HOME/.nvm"
 
 builtin . /usr/share/io.elementary.terminal/enable-zsh-completion-notifications || builtin true
 
-PATH=$PATH:/snap/bin:~/.local/bin
+PATH=$PATH:/snap/bin:$HOME/.local/bin:$HOME/.cargo/bin
