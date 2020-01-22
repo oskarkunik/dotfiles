@@ -8,6 +8,12 @@ sudo apt update && sudo apt upgrade -y &&
 printf "\n${bold}Install software\n${normal}" &&
 sudo apt install python3-pip zsh chromium-browser firefox picard inkscape gimp com.github.aimproxy.dotfonts com.github.donadigo.eddy com.github.lainsce.yishu com.github.babluboy.nutty com.github.lainsce.notejot com.github.ronnydo.colorpicker &&
 
+printf "\n${bold}Install pip3 based utils\n${normal}" &&
+printf "\t* install ${bold}bandcamp-dl\n${normal}" &&
+pip3 install bandcamp-downloader &&
+printf "\t* install ${bold}watchdog\n${normal}" &&
+pip3 install watchdog &&
+
 # Bandwhich network traffic monitor
 printf "\n${bold}Install bandwhich\n${normal}" &&
 sudo apt purge cargo rustc libstd-rust-1.37 libstd-rust-dev &&
