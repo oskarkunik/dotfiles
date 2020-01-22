@@ -2,10 +2,10 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-printf "${bold}Install updates\n" &&
+printf "${bold}Install updates\n${normal}" &&
 sudo apt update && sudo apt upgrade -y &&
 
-printf "${bold}Install software\n" &&
+printf "${bold}Install software\n${normal}" &&
 sudo apt install python3-pip zsh chromium-browser firefox picard &&
 
 
