@@ -6,7 +6,10 @@ printf "\n${bold}Install updates\n${normal}" &&
 sudo apt update && sudo apt upgrade -y &&
 
 printf "\n${bold}Install software\n${normal}" &&
-sudo apt install git python3-pip zsh chromium-browser firefox picard inkscape gimp com.github.aimproxy.dotfonts com.github.donadigo.eddy com.github.lainsce.yishu com.github.babluboy.nutty com.github.lainsce.notejot com.github.ronnydo.colorpicker &&
+sudo apt install -y git python3-pip zsh chromium-browser firefox picard inkscape gimp &&
+
+printf "\n${bold}Install elementaryOS specific software\n${normal}" &&
+sudo apt install -y com.github.aimproxy.dotfonts com.github.donadigo.eddy com.github.lainsce.yishu com.github.babluboy.nutty com.github.lainsce.notejot com.github.ronnydo.colorpicker &&
 
 printf "\n${bold}Install pip3 based utils\n${normal}" &&
 printf "\t* install ${bold}bandcamp-dl\n${normal}" &&
